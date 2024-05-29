@@ -1,5 +1,6 @@
 import { AdvantagesItem, AdvantagesStyle, Photo } from "../../styled-components/body/AdvantagesSection"
 import ButtonStyle from "../../styled-components/general/Button"
+import Light from "../../styled-components/general/Light"
 
 const AdvantagesSection =()=>{
 
@@ -28,6 +29,7 @@ const AdvantagesSection =()=>{
                     <h1>Retirada instantânea a qualquer hora do dia</h1>
                     <p>Use a interface conveniente de retirada em nosso site para isso.</p>
                     <ButtonStyle>
+                        <Light />
                         <a href="/">Contatos</a>
                     </ButtonStyle>
                 </div>
@@ -39,6 +41,7 @@ const AdvantagesSection =()=>{
                     <p>Ligue-nos durante o horário comercial ou escreva para o messenger - 
                         seu problema não ficará sem solução.</p>
                     <ButtonStyle>
+                        <Light />
                         <a href="/">Solicitar Serviço</a>
                     </ButtonStyle>
                 </div>

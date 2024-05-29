@@ -1,5 +1,6 @@
 import { ListStatistics, Row, RowItem, StatisticContainer, StatisticsStyle } from "../../styled-components/body/Statistics"
 import ButtonStyle from "../../styled-components/general/Button"
+import Light from "../../styled-components/general/Light"
 
 const Statistics = () => {
 
@@ -30,6 +31,7 @@ const Statistics = () => {
             </StatisticContainer>
             <StatisticContainer>
                 <ButtonStyle>
+                    <Light />
                     <a href="/">Solicitar Serviço</a>
                 </ButtonStyle>
             </StatisticContainer>

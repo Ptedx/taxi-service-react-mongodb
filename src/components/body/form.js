@@ -1,5 +1,6 @@
 import { Checkbox, FormItem } from "../../styled-components/body/form"
 import ButtonStyle from '../../styled-components/general/Button'
+import Light from "../../styled-components/general/Light"
 
 const Form = () => {
 
@@ -21,6 +22,7 @@ const Form = () => {
                     <input type="tel" name="tel" required placeholder="Digite seu número de telefone" />
                 </FormItem>
                 <ButtonStyle>
+                    <Light />
                     <input type="submit" value="Enviar" />
                 </ButtonStyle>
                 <Checkbox>

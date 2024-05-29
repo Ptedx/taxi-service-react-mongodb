@@ -13,6 +13,12 @@ export const SwiperModuleStyle = styled.div`
 
 export const SwipeCard = styled.div`
     border-radius: 10px;
+    cursor: grab;
+
+    &:active{
+        cursor: grabbing;
+    }
+    
     img{
         height: 128px;
     }

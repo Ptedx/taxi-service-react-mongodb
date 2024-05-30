@@ -1,15 +1,15 @@
-import { SwiperModuleStyle } from '../../styled-components/body/Swiper'
+import { SwiperModuleStyle } from '../../styled-components/body/Swiper.js'
 import { A11y, Autoplay } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { SwipeCard } from '../../styled-components/body/Swiper'
+import { SwipeCard } from '../../styled-components/body/Swiper.js'
 // Swiper styles
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import 'swiper/css/autoplay'
-import WidthChecker from '../general/WidthChecker'
-import size from '../../styled-components/general/sizes'
+import WidthChecker from '../general/WidthChecker.js'
+import size from '../../styled-components/general/sizes.js'
 
 const slideInfos = [
     {id: 1, img:'/img/person-1.png', name: 'Abigail', phrase: "A The Luxury redefine o que é viajar com estilo e conforto. Um serviço inigualável!"},
@@ -29,8 +29,6 @@ const SwiperModule = ()=>{
                 slidesPerView={WidthChecker(size.tablet)? 3: 2}                
                 loop = {true}
                 autoplay={{ delay: 2500, disableOnInteraction: false }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
             >
                 {slideInfos.map((item)=>(
                     <SwiperSlide key={item.id}>

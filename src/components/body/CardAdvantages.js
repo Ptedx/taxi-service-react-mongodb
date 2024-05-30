@@ -1,4 +1,4 @@
-import { CardMainStyle } from "../../styled-components/body/CardAdvantages"
+import { CardMainStyle } from "../../styled-components/body/CardAdvantages.js"
 
 
 const CardAdvantages = () => {

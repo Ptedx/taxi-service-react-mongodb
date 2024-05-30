@@ -1,6 +1,6 @@
-import { AdvantagesItem, AdvantagesStyle, Photo } from "../../styled-components/body/AdvantagesSection"
-import ButtonStyle from "../../styled-components/general/Button"
-import Light from "../../styled-components/general/Light"
+import { AdvantagesItem, AdvantagesStyle, Photo } from "../../styled-components/body/AdvantagesSection.js"
+import ButtonStyle from "../../styled-components/general/Button.js"
+import Light from "../../styled-components/general/Light.js"
 
 const AdvantagesSection =()=>{
 

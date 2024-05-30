@@ -1,6 +1,6 @@
-import { MainScreenStyled } from "../../styled-components/body/mainScreen"
-import Form from "./form"
-import Presentation from "./Presentation"
+import { MainScreenStyled } from "../../styled-components/body/mainScreen.js"
+import Form from "./form.js"
+import Presentation from "./Presentation.js"
 
 const MainScreen = ()=>{
 

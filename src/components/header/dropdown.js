@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Brand } from '../../styled-components/header/menu';
-import Header from '../../styled-components/header/header';
-import { MainMenu, MenuButton, MenuContainer, MenuContent } from '../../styled-components/header/dropdown';
+import { Brand } from '../../styled-components/header/menu.js';
+import Header from '../../styled-components/header/header.js';
+import { MainMenu, MenuButton, MenuContainer, MenuContent } from '../../styled-components/header/dropdown.js';
 
 const DropDownMenu = () => {
   const [isVisible, setIsVisible] = useState(false);

@@ -12,9 +12,9 @@ const Form = () => {
     })
     const ClickerREF = useRef()
 
-    useEffect(()=>{
+    useEffect(() => {
         ClickerREF.current.focus()
-    },[])
+    }, [])
 
     const handleChange = (event) => {
         const { name, value } = event.target
@@ -23,15 +23,16 @@ const Form = () => {
             [name]: value
         }));
     }
-
     const handleRegister = (event) => {
         event.preventDefault()
         axios.post('http://localhost:3002/send', formRawData)
             .then(response => {
                 alert(`Dados enviados com sucesso! Bem vindo ${response.data.name}!`)
+                setFormRawData({name: '', email: '', cellphone: ''})
             })
             .catch(error => {
                 alert('Erro ao enviar dados:', error);
+                setFormRawData({name: '', email: '', cellphone: ''})
             });
     }
 

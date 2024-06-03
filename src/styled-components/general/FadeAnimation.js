@@ -2,7 +2,7 @@ import useFadeAnimation from "../../components/general/FadeAnimation.js";
 import { motion } from 'framer-motion'
 
 const FadeAnimation = ({children})=>{
-    const [ref, isIntersecting] = useFadeAnimation({threshold: 0.5})
+    const [ref, isIntersecting] = useFadeAnimation({threshold: 0.25})
     return(
         
         <motion.div

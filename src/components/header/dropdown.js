@@ -20,8 +20,8 @@ const DropDownMenu = () => {
         </MainMenu> 
       <MenuContainer isVisible={isVisible}>
         <MenuContent>
-          <a href="#option1">Beneficios</a>
-          <a href="#option2">Depoimentos</a>
+          <a href="#beneficts">Beneficios</a>
+          <a href="#depoiments">Depoimentos</a>
         </MenuContent>
       </MenuContainer>
     </Header>

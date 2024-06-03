@@ -21,7 +21,7 @@ const slideInfos = [
 const SwiperModule = ()=>{
 
     return(
-        <SwiperModuleStyle>
+        <SwiperModuleStyle id="depoiments">
             <h1>Depoimento de clientes da The Luxury</h1>
             <Swiper
                 modules={[A11y, Autoplay]}

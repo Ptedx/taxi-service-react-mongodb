@@ -1,13 +1,16 @@
 import { AdvantagesItem, AdvantagesStyle, Photo } from "../../styled-components/body/AdvantagesSection.js"
 import ButtonStyle from "../../styled-components/general/Button.js"
+import FadeAnimation from "../../styled-components/general/FadeAnimation.js"
 import Light from "../../styled-components/general/Light.js"
 
 const AdvantagesSection =()=>{
 
     return (
-        <AdvantagesStyle>
+        <AdvantagesStyle id="beneficts">
             <AdvantagesItem>
-                <Photo bg='/img/foto.png' />
+                <FadeAnimation>
+                    <Photo bg='/img/foto.png' />
+                </FadeAnimation>
                 <div>
                     <h1>Encomendas à sua escolha</h1>
                     <p>Estão disponíveis vários tipos de distribuição de ordens: atribuição automática de 
@@ -16,7 +19,9 @@ const AdvantagesSection =()=>{
                 </div>
             </AdvantagesItem>
             <AdvantagesItem>
-                <Photo bg='/img/foto2.png' />
+                <FadeAnimation>
+                    <Photo bg='/img/foto2.png' />
+                </FadeAnimation>
                 <div>
                     <h1>Agregador favorável e comissões de parque</h1>
                     <p>Comissão Yandex Taxi para carros de marca de 15% e comissão de frota de 3%. Bônus e 
@@ -24,7 +29,9 @@ const AdvantagesSection =()=>{
                 </div>
             </AdvantagesItem>
             <AdvantagesItem>
-                <Photo bg='/img/foto3.png' />
+                <FadeAnimation>
+                    <Photo bg='/img/foto3.png' />
+                </FadeAnimation>
                 <div>
                     <h1>Retirada instantânea a qualquer hora do dia</h1>
                     <p>Use a interface conveniente de retirada em nosso site para isso.</p>
@@ -35,7 +42,9 @@ const AdvantagesSection =()=>{
                 </div>
             </AdvantagesItem>
             <AdvantagesItem>
-                <Photo bg='/img/foto4.png' />
+                <FadeAnimation>
+                    <Photo bg='/img/foto4.png' />
+                </FadeAnimation>
                 <div>
                     <h1>Suporte qualificado e rápido</h1>
                     <p>Ligue-nos durante o horário comercial ou escreva para o messenger - 

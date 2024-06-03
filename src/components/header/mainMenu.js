@@ -7,8 +7,8 @@ const MainMenu = ()=>{
         <Header>
                 <Brand><img src="/img/Logo-taxi.png" alt="logo-taxi"></img></Brand>
                 <MenuItems>
-                    <a href="#option1">Beneficios</a>
-                    <a href="#option2">Depoimentos</a>
+                    <a href="#beneficts">Beneficios</a>
+                    <a href="#depoiments">Depoimentos</a>
                 </MenuItems>
         </Header>
     )

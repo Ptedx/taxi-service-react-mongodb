@@ -1,7 +1,6 @@
-import { SwiperModuleStyle } from '../../styled-components/body/Swiper.js'
 import { A11y, Autoplay } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { SwipeCard } from '../../styled-components/body/Swiper.js'
+import { SwipeCard, SwiperModuleStyle } from '../../styled-components/body/Swiper.tsx'
 // Swiper styles
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -9,7 +8,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import 'swiper/css/autoplay'
 import WidthChecker from '../general/WidthChecker.js'
-import size from '../../styled-components/general/sizes.js'
+import size from '../../styled-components/general/sizes.tsx'
 
 const slideInfos = [
     {id: 1, img:'/img/person-1.png', name: 'Abigail', phrase: "A The Luxury redefine o que é viajar com estilo e conforto. Um serviço inigualável!"},

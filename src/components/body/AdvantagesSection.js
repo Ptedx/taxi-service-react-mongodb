@@ -1,7 +1,7 @@
 import { AdvantagesItem, AdvantagesStyle, Photo } from "../../styled-components/body/AdvantagesSection.js"
-import ButtonStyle from "../../styled-components/general/Button.js"
+import ButtonStyle from "../../styled-components/general/Button.tsx"
 import FadeAnimation from "../../styled-components/general/FadeAnimation.js"
-import Light from "../../styled-components/general/Light.js"
+import Light from "../../styled-components/general/Light.tsx"
 
 const AdvantagesSection =()=>{
 

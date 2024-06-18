@@ -1,6 +1,6 @@
-import { Brand } from "../../styled-components/header/menu.js";
-import Header from "../../styled-components/header/header.js";
-import { MenuItems } from "../../styled-components/header/menu.js";
+import { Brand, MenuItems } from "../../styled-components/header/menu.tsx";
+import Header from "../../styled-components/header/header.tsx";
+
 const MainMenu = ()=>{
 
     return(

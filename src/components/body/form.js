@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react"
 import axios from "axios"
-import { Checkbox, FormItem } from "../../styled-components/body/form.js"
-import ButtonStyle from '../../styled-components/general/Button.js'
-import Light from "../../styled-components/general/Light.js"
+import { Checkbox, FormItem } from "../../styled-components/body/form.tsx"
+import ButtonStyle from '../../styled-components/general/Button.tsx'
+import Light from "../../styled-components/general/Light.tsx"
 
 const Form = () => {
     const [formRawData, setFormRawData] = useState({

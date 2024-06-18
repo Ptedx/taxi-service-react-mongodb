@@ -1,4 +1,4 @@
-import { FooterRow, FooterStyle, Footitem } from "../../styled-components/footer/Footer.js"
+import { FooterRow, FooterStyle, Footitem } from "../../styled-components/footer/Footer.tsx"
 
 const Footer = ()=>{
 

@@ -1,14 +1,12 @@
-import styled from 'styled-components'
-
+import styled from 'styled-components';
 // Styled-components para estilos
-export const MenuContainer = styled.div`
-  display: ${(props)=> (props.isVisible? 'block': 'none')};
+export const MenuContainer = styled.div `
+  display: ${(props) => (props.isVisible ? 'block' : 'none')};
   width: 100%;
   background-color: #f9f9f9;
   border-radius:10px;
-`
-
-export const MenuButton = styled.button`
+`;
+export const MenuButton = styled.button `
   padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
     line-height: 1;
@@ -29,15 +27,13 @@ export const MenuButton = styled.button`
         background-size: 100% 100%;
         background-image: url('/img/Hamburger_icon.png')
     }
-`
-
-export const MainMenu = styled.div`
+`;
+export const MainMenu = styled.div `
     display:flex;
     width:100%;
     justify-content: space-between;
-`
-
-export const MenuContent = styled.div`
+`;
+export const MenuContent = styled.div `
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -61,4 +57,4 @@ export const MenuContent = styled.div`
       border-top: none;
     }
   }
-`
+`;

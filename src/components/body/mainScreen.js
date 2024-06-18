@@ -1,4 +1,4 @@
-import { MainScreenStyled } from "../../styled-components/body/mainScreen.js"
+import { MainScreenStyled } from "../../styled-components/body/mainScreen.tsx"
 import Form from "./form.js"
 import Presentation from "./Presentation.js"
 

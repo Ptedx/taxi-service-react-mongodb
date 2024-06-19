@@ -1,4 +1,4 @@
-import FadeAnimation from "../../styled-components/general/FadeAnimation.js"
+import FadeAnimation from "../../styled-components/general/FadeAnimation.tsx"
 
 const Presentation = ()=>{
     //Aplicar a animação de fadein na imagem 

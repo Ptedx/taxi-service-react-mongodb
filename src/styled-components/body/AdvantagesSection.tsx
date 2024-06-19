@@ -50,8 +50,12 @@ export const AdvantagesItem = styled.div`
         }
     }
 `
+interface PhotoProps {
+    bg: string;
+  }
 
-export const Photo = styled.div`
+
+export const Photo = styled.div<PhotoProps>`
     min-height: 330px;
     background: url(${props=> props.bg}) no-repeat;
     background-position: center;

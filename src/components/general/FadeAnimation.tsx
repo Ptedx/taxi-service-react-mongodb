@@ -1,7 +1,12 @@
-import { useEffect, useRef, useState } from "react"
-const useFadeAnimation = (options)=>{
-    const [isIntersecting, setIntersecting] = useState(false)
-    const referredElement = useRef()
+import { useEffect, useRef, useState, RefObject } from "react"
+
+interface optionsProps{
+    threshold: number
+}
+
+const useFadeAnimation = (options:optionsProps): [RefObject<HTMLDivElement>, boolean]=>{
+    const [isIntersecting, setIntersecting] = useState<boolean>(false)
+    const referredElement = useRef<HTMLDivElement>(null)
     
     useEffect(()=>{
         const observer = new IntersectionObserver(([entry])=>{

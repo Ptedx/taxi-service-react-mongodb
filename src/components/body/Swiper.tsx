@@ -1,16 +1,23 @@
 import { A11y, Autoplay } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { SwipeCard, SwiperModuleStyle } from '../../styled-components/body/Swiper.tsx'
+import { SwipeCard, SwiperModuleStyle } from '../../styled-components/body/Swiper'
 // Swiper styles
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import 'swiper/css/autoplay'
-import WidthChecker from '../general/WidthChecker.tsx'
-import size from '../../styled-components/general/sizes.tsx'
+import WidthChecker from '../general/WidthChecker'
+import size from '../../styled-components/general/sizes'
 
-const slideInfos = [
+interface slideInfosProps{
+    id: number,
+    img:string,
+    name: string,
+    phrase: string
+}
+
+const slideInfos:slideInfosProps[] = [
     {id: 1, img:'/img/person-1.png', name: 'Abigail', phrase: "A The Luxury redefine o que é viajar com estilo e conforto. Um serviço inigualável!"},
     {id: 2, img:'/img/person-2.png', name: 'Josh', phrase: "Pedi um táxi da The Luxury depois de um dia exaustivo... Cara, que mordomia! Me senti um rei!"},
     {id: 3, img:'/img/person-3.png', name: 'Sophie', phrase: "Nada como ouvir uma boa música, no ar condicionado, depois de um dia de trabalho. The Luxury, vocês salvaram minha noite!"},

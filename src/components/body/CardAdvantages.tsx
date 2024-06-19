@@ -1,4 +1,4 @@
-import { CardMainStyle } from "../../styled-components/body/CardAdvantages.tsx"
+import { CardMainStyle } from "../../styled-components/body/CardAdvantages"
 
 
 const CardAdvantages = () => {

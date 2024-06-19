@@ -1,37 +1,47 @@
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, ChangeEvent, FormEvent} from "react"
 import axios from "axios"
-import { Checkbox, FormItem } from "../../styled-components/body/form.tsx"
-import ButtonStyle from '../../styled-components/general/Button.tsx'
-import Light from "../../styled-components/general/Light.tsx"
+import { Checkbox, FormItem } from "../../styled-components/body/form"
+import ButtonStyle from '../../styled-components/general/Button'
+import Light from "../../styled-components/general/Light"
+
+interface formDataProps {
+    name: string,
+    email: string,
+    cellphone: string
+}
 
 const Form = () => {
-    const [formRawData, setFormRawData] = useState({
+    const [formRawData, setFormRawData] = useState<formDataProps>({
         name: '',
         email: '',
         cellphone: ''
     })
-    const ClickerREF = useRef()
+    const ClickerREF = useRef<HTMLInputElement>(null)
 
     useEffect(() => {
-        ClickerREF.current.focus()
+        ClickerREF.current?.focus()
     }, [])
 
-    const handleChange = (event) => {
+    const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
         const { name, value } = event.target
         setFormRawData((prevData) => ({
             ...prevData,
             [name]: value
         }));
     }
-    const handleRegister = (event) => {
+    const handleRegister = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault()
         axios.post('http://localhost:3002/send', formRawData)
             .then(response => {
                 alert(`Dados enviados com sucesso! Bem vindo ${response.data.name}!`)
                 setFormRawData({name: '', email: '', cellphone: ''})
             })
-            .catch(error => {
-                alert('Erro ao enviar dados:', error);
+            .catch((error: unknown) => {
+                if (error instanceof Error){
+                    alert(`Error: ${error.message}`)
+                }else{
+                    alert("Error: unexpected error!")
+                }
                 setFormRawData({name: '', email: '', cellphone: ''})
             });
     }

@@ -1,6 +1,6 @@
-import { ListStatistics, Row, RowItem, StatisticContainer, StatisticsStyle } from "../../styled-components/body/Statistics.tsx"
-import ButtonStyle from "../../styled-components/general/Button.tsx"
-import Light from "../../styled-components/general/Light.tsx"
+import { ListStatistics, Row, RowItem, StatisticContainer, StatisticsStyle } from "../../styled-components/body/Statistics"
+import ButtonStyle from "../../styled-components/general/Button"
+import Light from "../../styled-components/general/Light"
 
 const Statistics = () => {
 

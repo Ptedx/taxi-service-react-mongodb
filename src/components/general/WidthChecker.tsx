@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
-const WidthChecker = (size)=>{
-    const [isBigScreen, setBigScreen] = useState(window.innerWidth > size)
+const WidthChecker = (size:number)=>{
+    const [isBigScreen, setBigScreen] = useState<boolean>(window.innerWidth > size)
 
     useEffect(()=>{
         const handleBigScreen = ()=>{

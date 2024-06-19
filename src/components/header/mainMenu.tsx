@@ -1,5 +1,5 @@
-import { Brand, MenuItems } from "../../styled-components/header/menu.tsx";
-import Header from "../../styled-components/header/header.tsx";
+import { Brand, MenuItems } from "../../styled-components/header/menu";
+import Header from "../../styled-components/header/header";
 
 const MainMenu = ()=>{
 

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Brand } from '../../styled-components/header/menu.tsx';
-import Header from '../../styled-components/header/header.tsx';
-import { MainMenu, MenuButton, MenuContainer, MenuContent } from '../../styled-components/header/dropdown.tsx';
+import { Brand } from '../../styled-components/header/menu';
+import Header from '../../styled-components/header/header';
+import { MainMenu, MenuButton, MenuContainer, MenuContent } from '../../styled-components/header/dropdown';
 
 const DropDownMenu = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
   const toggleMenu = () => {
     setIsVisible(!isVisible);

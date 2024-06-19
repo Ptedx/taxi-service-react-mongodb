@@ -7,7 +7,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import 'swiper/css/autoplay'
-import WidthChecker from '../general/WidthChecker.js'
+import WidthChecker from '../general/WidthChecker.tsx'
 import size from '../../styled-components/general/sizes.tsx'
 
 const slideInfos = [

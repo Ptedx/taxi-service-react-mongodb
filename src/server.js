@@ -1,11 +1,12 @@
 import mongoose from "mongoose"
 import express from 'express'
 import user from "./models/user.js"
-import cors from 'cors'
+import cors from "cors"
 
 const app = express()
 app.use(express.json())
 app.use(cors())
+
 
 app.get('/', async (req, res)=>{
     const listUsers = await user.find()

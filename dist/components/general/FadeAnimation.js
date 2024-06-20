@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 const useFadeAnimation = (options) => {
     const [isIntersecting, setIntersecting] = useState(false);
-    const referredElement = useRef();
+    const referredElement = useRef(null);
     useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
             setIntersecting(entry.isIntersecting);

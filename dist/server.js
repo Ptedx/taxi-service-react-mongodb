@@ -9,11 +9,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 import mongoose from "mongoose";
 import express from 'express';
-import user from "./models/user.js";
-import cors from 'cors';
+import user from "./models/user";
 const app = express();
 app.use(express.json());
-app.use(cors());
 app.get('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const listUsers = yield user.find();
     return res.status(200).json(listUsers);

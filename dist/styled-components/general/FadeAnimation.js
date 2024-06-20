@@ -1,5 +1,5 @@
 import { jsx as _jsx } from "react/jsx-runtime";
-import useFadeAnimation from "../../components/general/FadeAnimation.js";
+import useFadeAnimation from "../../components/general/FadeAnimation";
 import { motion } from 'framer-motion';
 const FadeAnimation = ({ children }) => {
     const [ref, isIntersecting] = useFadeAnimation({ threshold: 0.25 });

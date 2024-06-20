@@ -1,18 +1,19 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
-import { Checkbox, FormItem } from "../../styled-components/body/form.js";
-import ButtonStyle from '../../styled-components/general/Button.js';
-import Light from "../../styled-components/general/Light.js";
+import { Checkbox, FormItem } from "../../styled-components/body/form";
+import ButtonStyle from '../../styled-components/general/Button';
+import Light from "../../styled-components/general/Light";
 const Form = () => {
     const [formRawData, setFormRawData] = useState({
         name: '',
         email: '',
         cellphone: ''
     });
-    const ClickerREF = useRef();
+    const ClickerREF = useRef(null);
     useEffect(() => {
-        ClickerREF.current.focus();
+        var _a;
+        (_a = ClickerREF.current) === null || _a === void 0 ? void 0 : _a.focus();
     }, []);
     const handleChange = (event) => {
         const { name, value } = event.target;
@@ -25,8 +26,13 @@ const Form = () => {
             alert(`Dados enviados com sucesso! Bem vindo ${response.data.name}!`);
             setFormRawData({ name: '', email: '', cellphone: '' });
         })
-            .catch(error => {
-            alert('Erro ao enviar dados:', error);
+            .catch((error) => {
+            if (error instanceof Error) {
+                alert(`Error: ${error.message}`);
+            }
+            else {
+                alert("Error: unexpected error!");
+            }
             setFormRawData({ name: '', email: '', cellphone: '' });
         });
     };

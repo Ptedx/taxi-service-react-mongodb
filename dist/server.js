@@ -1,3 +1,8 @@
+import mongoose from "mongoose";
+import express from 'express';
+import user from "./models/user.js";
+import cors from "cors";
+
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -7,11 +12,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import mongoose from "mongoose";
-import express from 'express';
-import user from "./models/user";
+
 const app = express();
 app.use(express.json());
+app.use(cors());
 app.get('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const listUsers = yield user.find();
     return res.status(200).json(listUsers);

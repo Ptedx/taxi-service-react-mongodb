@@ -17,6 +17,6 @@ const slideInfos = [
     { id: 4, img: '/img/person-4.png', name: 'Mila', phrase: "Quando o motorista abriu a porta pra mim e ainda me desejou um bom dia, aí percebi que estava na The Luxury. Que tratamento!" }
 ];
 const SwiperModule = () => {
-    return (_jsxs(SwiperModuleStyle, { id: "depoiments", children: [_jsx("h1", { children: "Depoimento de clientes da The Luxury" }), _jsx(Swiper, { modules: [A11y, Autoplay], spaceBetween: 20, slidesPerView: WidthChecker(size.tablet) ? 3 : 2, loop: true, autoplay: { delay: 2500, disableOnInteraction: false }, children: slideInfos.map((item) => (_jsx(SwiperSlide, { children: _jsxs(SwipeCard, { children: [_jsx("div", { children: _jsx("img", { src: item.img, alt: item.name }) }), _jsxs("div", { children: [_jsx("h1", { children: item.name }), _jsx("p", { children: item.phrase })] })] }) }, item.id))) })] }));
+    return (_jsxs(SwiperModuleStyle, Object.assign({ id: "depoiments" }, { children: [_jsx("h1", { children: "Depoimento de clientes da The Luxury" }), _jsx(Swiper, Object.assign({ modules: [A11y, Autoplay], spaceBetween: 20, slidesPerView: WidthChecker(size.tablet) ? 3 : 2, loop: true, autoplay: { delay: 2500, disableOnInteraction: false } }, { children: slideInfos.map((item) => (_jsx(SwiperSlide, { children: _jsxs(SwipeCard, { children: [_jsx("div", { children: _jsx("img", { src: item.img, alt: item.name }) }), _jsxs("div", { children: [_jsx("h1", { children: item.name }), _jsx("p", { children: item.phrase })] })] }) }, item.id))) }))] })));
 };
 export default SwiperModule;

@@ -1,13 +1,23 @@
 import { Request, Response } from 'express'
-import user from "../models/user"
+import user from "../models/user.js"
 
-export async function getUser(req:Request, res: Response) {
+interface userProps {
+    _id: string,
+    name: string,
+    email: string,
+    cellphone: number,
+    creationDate: Date,
+    _v?:number
+}
+
+
+export async function getUser(req:Request<{},{},userProps>, res: Response) {
+    console.log(res)
     const listUsers = await user.find()
-
     return res.status(200).json(listUsers)
 }
 
-export async function sendUser(req:Request, res:Response){
+export async function sendUser(req:Request<{},{},userProps>, res:Response){
     try{
         const actualUser = await user.findOne({email: req.body.email}) 
         if (actualUser){

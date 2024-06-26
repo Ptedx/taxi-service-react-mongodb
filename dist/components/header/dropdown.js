@@ -8,6 +8,6 @@ const DropDownMenu = () => {
     const toggleMenu = () => {
         setIsVisible(!isVisible);
     };
-    return (_jsxs(Header, { children: [_jsxs(MainMenu, { children: [_jsx(Brand, { children: _jsx("img", { src: "/img/Logo-taxi.png", alt: "logo-taxi" }) }), _jsx(MenuButton, Object.assign({ onClick: toggleMenu }, { children: _jsx("span", {}) }))] }), _jsx(MenuContainer, Object.assign({ isVisible: isVisible }, { children: _jsxs(MenuContent, { children: [_jsx("a", Object.assign({ href: "#beneficts" }, { children: "Beneficios" })), _jsx("a", Object.assign({ href: "#depoiments" }, { children: "Depoimentos" }))] }) }))] }));
+    return (_jsxs(Header, { children: [_jsxs(MainMenu, { children: [_jsx(Brand, { children: _jsx("img", { src: "/img/Logo-taxi.png", alt: "logo-taxi" }) }), _jsx(MenuButton, { onClick: toggleMenu, children: _jsx("span", {}) })] }), _jsx(MenuContainer, { isVisible: isVisible, children: _jsxs(MenuContent, { children: [_jsx("a", { href: "#beneficts", children: "Beneficios" }), _jsx("a", { href: "#depoiments", children: "Depoimentos" })] }) })] }));
 };
 export default DropDownMenu;

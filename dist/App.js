@@ -12,6 +12,6 @@ import DropDownMenu from './components/header/dropdown';
 import size from './styled-components/general/sizes';
 import Footer from './components/footer/Footer';
 function App() {
-    return (_jsx("div", Object.assign({ className: "App" }, { children: _jsxs(Container, { children: [WidthChecker(size.mobile) ? _jsx(MainMenu, {}) : _jsx(DropDownMenu, {}), _jsx(MainScreen, {}), _jsx(CardAdvantages, {}), _jsx(AdvantagesSection, {}), _jsx(Statistics, {}), _jsx(SwiperModule, {}), _jsx(Footer, {})] }) })));
+    return (_jsx("div", { className: "App", children: _jsxs(Container, { children: [WidthChecker(size.mobile) ? _jsx(MainMenu, {}) : _jsx(DropDownMenu, {}), _jsx(MainScreen, {}), _jsx(CardAdvantages, {}), _jsx(AdvantagesSection, {}), _jsx(Statistics, {}), _jsx(SwiperModule, {}), _jsx(Footer, {})] }) }));
 }
 export default App;

@@ -1,6 +1,6 @@
 import './App.css';
 import Container from './styled-components/general/container';
-import WidthChecker from './components/general/WidthChecker';
+import WidthChecker  from './components/general/WidthChecker';
 import MainScreen from './components/body/mainScreen';
 import CardAdvantages from './components/body/CardAdvantages';
 import AdvantagesSection from './components/body/AdvantagesSection';
